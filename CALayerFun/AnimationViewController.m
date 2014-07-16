@@ -173,7 +173,7 @@
     //沿X轴旋转
 //     TransformAnim.toValue = [NSValue valueWithCATransform3D: CATransform3DMakeRotation(M_PI,1.0,0,0)];
     TransformAnim.cumulative = YES;
-    TransformAnim.duration =3;
+    TransformAnim.duration =1;
     //旋转2遍，360度
     TransformAnim.repeatCount =2;
     self.imageView.center = toPoint;
@@ -194,7 +194,7 @@
     //围绕Z轴旋转，垂直与屏幕
     animation.toValue = [ NSValue valueWithCATransform3D:
                          CATransform3DMakeRotation(M_PI, 0, 0, 1.0) ];
-    animation.duration = 3;
+    animation.duration = 5;
     //旋转效果累计，先转180度，接着再旋转180度，从而实现360旋转
     animation.cumulative = YES;
     animation.repeatCount = 2;
